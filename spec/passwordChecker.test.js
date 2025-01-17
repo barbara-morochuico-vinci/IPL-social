@@ -87,4 +87,11 @@ describe('tests for a Password Checker', function() {
         expect(result).toBe(false);
     });
 
+    it('the function should return true if the password meets all the criteria', function() {
+
+        const result = main.passwordChecker('Paaaassw@ooo2rdd');
+
+        expect(result).toBe(true);
+    });
+
 });
