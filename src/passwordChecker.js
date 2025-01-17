@@ -1,8 +1,8 @@
 export class Main {
     passwordChecker(password) {
-        if(isLongerThan8(password)) return true;
+        if(isLongerThan8(password) && /0/.test(password)) return true;
 
-       return false;
+        return false;
     }
 }
 
