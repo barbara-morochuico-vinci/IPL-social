@@ -59,4 +59,11 @@ describe('tests for a Password Checker', function() {
         expect(result).toBe(false);
     });
 
+    it('the function should return false if the password contains IPL and meets the other criteria', function() {
+
+        const result = main.passwordChecker('P@ssw_IPL_oo2rdd');
+
+        expect(result).toBe(false);
+    });
+
 });
