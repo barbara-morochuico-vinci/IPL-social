@@ -73,4 +73,11 @@ describe('tests for a Password Checker', function() {
         expect(result).toBe(false);
     });
 
+    it('the function should return true if the password contains and @ and meets the other criteria', function() {
+
+        const result = main.passwordChecker('P@sswoooo2rdd');
+
+        expect(result).toBe(true);
+    });
+
 });
