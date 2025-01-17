@@ -37,4 +37,11 @@ describe('tests for a Password Checker', function() {
 
         expect(result).toBe(true);
     });
+
+    it('should return true if the password contains the number 1 and is longer than 8 characters', function() {
+
+        const result = main.passwordChecker('P@sswoo1rdd');
+
+        expect(result).toBe(true);
+    });
 });
