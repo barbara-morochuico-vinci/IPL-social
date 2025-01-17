@@ -1,13 +1,13 @@
 export class Main {
     passwordChecker(password) {
-        if(isLongerThan8(password) && containsNumber(password) && containsIpl(password) )  return true;
+        if(isLongerThan8(password) && containsNumber(password) && !containsIpl(password) )  return true;
 
         return false;
     }
 }
 
 function containsIpl(password) {
-    return !/ipl/i.test(password);
+    return /ipl/i.test(password);
 }
 
 function containsNumber(password) {
