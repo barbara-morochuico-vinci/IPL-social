@@ -23,4 +23,11 @@ describe('tests for a Password Checker', function() {
 
         expect(result).toBe(true);
     });
+
+    it('should return true if the password contains 10 characters', function() {
+
+        const result = main.passwordChecker('P@ssw0ordd');
+
+        expect(result).toBe(true);
+    });
 });
