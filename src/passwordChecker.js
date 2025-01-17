@@ -1,5 +1,5 @@
 export class Main {
-    passwordChecker() {
-       
+    passwordChecker(password) {
+       return false;
     }
 }
