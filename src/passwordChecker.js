@@ -1,6 +1,6 @@
 export class Main {
     passwordChecker(password) {
-        if(isLongerThan8(password) && containsNumber(password) && !containsIpl(password) )  return true;
+        if(isLongerThan8(password) && containsNumber(password) && !containsIpl(password) && /[!@#$%^&*(),.?":{}|<>]/.test(password))  return true;
 
         return false;
     }
