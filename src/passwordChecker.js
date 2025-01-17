@@ -1,7 +1,11 @@
 export class Main {
     passwordChecker(password) {
-        if(password.length >= 8) return true;
+        if(isLongerThan8(password)) return true;
 
        return false;
     }
+}
+
+function isLongerThan8(password) {
+    return password.length >= 8;
 }
